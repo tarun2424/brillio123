@@ -36,6 +36,7 @@ public class CrossB {
 		
 	    driver.get("https://petstore.octoperf.com/actions/Account.action?signonForm=");
 	    driver.findElement(By.name("username")).sendKeys("tarun");
+	    driver.findElement(By.name("password")).clear();
 	    driver.findElement(By.name("password")).sendKeys("Abcd@1234");
 	    Thread.sleep(2000);
 	    driver.findElement(By.name("signon")).click();
